@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Script Name: send_to_vs_code.sh
+# Script Name: fetch_from_vs_code.sh
 #
 # Author: Prof. Dr. Christian Pfitzner
 # Date : 2020-07-10
@@ -15,7 +15,7 @@ echo "-------------------------------------------------------"
 echo " Setting up the vs code snippets"
 echo "-------------------------------------------------------"
 
-
+# getting the default folder form vs code snippets
 vs_code_snippets_dir="$HOME/.config/Code/User/snippets/"
 vs_code_snippets_dir=`dialog --inputbox "VS Code snippet Directory" 0 0 "${vs_code_snippets_dir}" \
   3>&1 1>&2 2>&3`
@@ -28,13 +28,14 @@ target_latex="${vs_code_snippets_dir}latex.json"
 target_shell="${vs_code_snippets_dir}shellscript.json"
 
 # copying the latex file
-cp latex.json ${target_latex} 
-echo " Coppied ${target}" 
+cp ${target_latex} latex.json
+echo " Coppied ${target_latex}" 
 
 # copying the shell script file
-cp shellscript.json ${target_shell} 
+cp ${target_shell} shellscript.json 
 echo " Coppied ${target_shell}" 
 
+
 echo "-------------------------------------------------------"
-echo " Setting up the vs code snippets"
+echo " Copied vs code snippets to repo. "
 echo "-------------------------------------------------------"
