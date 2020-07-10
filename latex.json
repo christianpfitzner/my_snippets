@@ -17,8 +17,8 @@
 		"body": [
 		  "\\begin{figure}",
 		  "  \\centering",
-		  "  \\includegraphics[width=$2\\textwidth]{$1}",
-		  "  \\caption{$3}",
+		  "  \\includegraphics[width=${2:width}\\textwidth]{${1:figure_path}}",
+		  "  \\caption{${3:caption_of_image}}",
 		  "\\end{figure}"
 		],
 		"description": "figure_with_caption"
@@ -27,10 +27,10 @@
         "prefix": "question_w_sub_solution",
         "body": [
           "%*********************************************",
-          "\\question $1",
+          "\\question ${1:question}",
           "\\begin{parts}",
-          "  \\part[$2] $3 ",
-          "  \\begin{solution}",
+          "  \\part[${2:points_for_question}] ${3:sub_question} ",
+          "  \\begin{solution}[${4:blocksize}]",
           "",
           "  \\end{solution}",
           "\\end{parts} ",
@@ -61,8 +61,8 @@
 		"body": [
 		  "\\begin{table}",
 		  "  \\centering",
-		  "  \\caption{}",
-		  "  \\begin{tabular}{}",
+		  "  \\caption{${1:caption}}",
+		  "  \\begin{tabular}{${2:nr_of_cols}}",
 		  "    \\toprule\\\\",
 		  "",
 		  "    \\bottomrule\\\\",
