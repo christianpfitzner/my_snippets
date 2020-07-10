@@ -1,5 +1,5 @@
 {
-	// Place your snippets for shellscript here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// Place your snippets for cpp here. Each snippet is defined under a snippet name and has a prefix, body and 
 	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
 	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
 	// same ids are connected.
@@ -12,37 +12,4 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
-
-  "Header for bash_script": {
-  "prefix": "echo_comment_block",
-  "body": [
-    "echo \"-------------------------------------------------------\"",
-    "echo \" ${1:text}\"",
-    "echo \"-------------------------------------------------------\""
-  ],
-  "description": "Header for bash_script"
-}, 
-"Header for bash_script including author and filename": {
-  "prefix": "header_with_author",
-  "body": [
-    "#!/bin/bash",
-    "#",
-    "# Script Name: ${TM_FILENAME}",
-    "#",
-    "# Author: ${1:author}",
-    "# Date : $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
-    "#",
-    "# Description: ${2:Description}",
-    "# *****************************************************************",
-    ""
-  ],
-  "description": "Header for bash_script"
-}, 
-"A comment in a single line": {
-  "prefix": "comment_single_line",
-  "body": [
-    "# ${1:comment}"
-  ],
-  "description": "A comment in a single line"
-}
 }
