@@ -22,5 +22,53 @@
 		  "\\end{figure}"
 		],
 		"description": "figure_with_caption"
+      },
+      "This generates a question, as well es a partial question -- including the solution": {
+        "prefix": "question_w_sub_solution",
+        "body": [
+          "%*********************************************",
+          "\\question $1",
+          "\\begin{parts}",
+          "  \\part[$2] $3 ",
+          "  \\begin{solution}",
+          "",
+          "  \\end{solution}",
+          "\\end{parts} ",
+          "%*********************************************"
+        ],
+        "description": "This generates a question, as well es a partial question -- including the solution"
+	  }, 
+	  "New page including clear page": {
+		"prefix": "newpage",
+		"body": [
+		  "%*********************************************\"",
+		  "\\newpage",
+		  "\\clearpage"
+		],
+		"description": "This generates a question, as well es a partial question -- including the solution"
+	  }, 
+	"Generation of a simple equation": {
+		"prefix": "equation",
+		"body": [
+		  "\\begin{equation}",
+		  "  $1",
+		  "\\end{equation}"
+		],
+		"description": "Generation of a simple equation"
+	  }, 
+	  "Generation of a simple table": {
+		"prefix": "table_with_caption",
+		"body": [
+		  "\\begin{table}",
+		  "  \\centering",
+		  "  \\caption{}",
+		  "  \\begin{tabular}{}",
+		  "    \\toprule\\\\",
+		  "",
+		  "    \\bottomrule\\\\",
+		  "  \\end{tabular}",
+		  "\\end{table}"
+		],
+		"description": "Generation of a simple table"
 	  }
 }
