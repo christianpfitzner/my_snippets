@@ -35,6 +35,13 @@ echo " Coppied ${target}"
 cp shellscript.json ${target_shell} 
 echo " Coppied ${target_shell}" 
 
+
+
+
+cat extensions.list | xargs -L 1 code --install-extension
+
+
+
 echo "-------------------------------------------------------"
 echo " Setting up the vs code snippets"
 echo "-------------------------------------------------------"

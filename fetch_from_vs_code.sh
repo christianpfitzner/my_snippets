@@ -42,6 +42,10 @@ cp ${target_shell} cpp.json
 echo " Coppied ${target_cpp}" 
 
 
+# fetch the current installed extension
+code --list-extensions > extensions.list
+
+
 echo "-------------------------------------------------------"
 echo " Copied vs code snippets to repo. "
 echo "-------------------------------------------------------"
