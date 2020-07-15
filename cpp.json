@@ -12,4 +12,91 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
+
+
+
+
+
+	"license_header": {
+		"prefix": "license",
+		"body": [
+		  "/* Copyright (C) 2020 Prof. Dr. Christian Pfitzner - All Rights Reserved",
+		  " * You may use, distribute and modify this code under the",
+		  " * terms of the BSD license, which unfortunately won't be",
+		  " * written for another century.",
+		  " */"
+		],
+		"description": "license_header"
+	  },
+
+
+
+	  "main_with_while": {
+		"prefix": "ros",
+		"body": [
+		  "#include <ros/ros.h>",
+		  "",
+		  "",
+		  "",
+		  "int main(int argc, char **argv)",
+		  "{",
+		  "   ros::init(argc, argv, \"${1:node_name}\");",
+		  "   ros::NodeHandle n;",
+		  "",
+		  "   ros::Rate loop_rate(${2:looprate});",
+		  "   while(ros::ok())",
+		  "   {",
+		  "",
+		  "",
+		  "      loop_rate.sleep();          ",
+		  "   }",
+		  "",
+		  "   return 0;",
+		  "}"
+		],
+		"description": "main_with_while"
+	  }, 
+
+
+	  "ros_callback_function": {
+		"prefix": "ros_callback_function",
+		"body": [
+		  "void $1Callback(${2:type} ${3:variable_name})",
+		  "{",
+		  "",
+		  "",
+		  "}"
+		],
+		"description": "ros_callback_function"
+	  }, 
+
+
+	  "ros_subscriber": {
+		"prefix": "ros_subscriber",
+		"body": [
+		  "ros::Subscriber ${1:variable_name} = n.subscribe(\"${2:topicname}\", 1, ${3:callback_fkt});"
+		],
+		"description": "ros_subscriber"
+	  }, 
+
+
+	  "ros_publisher": {
+		"prefix": "ros_publisher",
+		"body": [
+		  "ros::Publisher ${1:var_name} = n.advertise<${2:type}>(\"${3:topic_name}\", 1);",
+		  ""
+		],
+		"description": "ros_publisher"
+	  }, 
+
+
+
+
+	  "pretty_function": {
+		"prefix": "pretty_function",
+		"body": [
+		  "std::cout << __PRETTY_FUNCTION__ << std::endl; "
+		],
+		"description": "pretty_function"
+	  }
 }

@@ -70,21 +70,5 @@
 		  "\\end{table}"
 		],
 		"description": "Generation of a simple table"
-	  }, 
-	  "adding a single line ": {
-		"prefix": "comment_devider",
-		"body": [
-		  "%*********************************************"
-		],
-		"description": "adding a single line "
-	  }, 
-	  "adding a single line and a comment": {
-		"prefix": "comment_devider_with_text",
-		"body": [
-		  "%*********************************************",
-		  "% ${1:comment}",
-		  "%*********************************************"
-		],
-		"description": "adding a single line and a comment"
 	  }
 }
