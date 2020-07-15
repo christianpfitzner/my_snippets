@@ -26,7 +26,9 @@ echo " Directory for the snippets is ${vs_code_snippets_dir}"
 
 target_latex="${vs_code_snippets_dir}latex.json"
 target_shell="${vs_code_snippets_dir}shellscript.json"
-target_shell="${vs_code_snippets_dir}cpp.json"
+target_cpp="${vs_code_snippets_dir}cpp.json"
+target_octave="${vs_code_snippets_dir}octave.json"
+
 
 
 # copying the latex file
@@ -38,8 +40,12 @@ cp ${target_shell} shellscript.json
 echo " Coppied ${target_shell}" 
 
 # copying the shell script file
-cp ${target_shell} cpp.json 
+cp ${target_cpp} cpp.json 
 echo " Coppied ${target_cpp}" 
+
+# copying the octave snippets file
+cp ${target_octave} octave.json 
+echo " Coppied ${target_octave}" 
 
 
 echo "-------------------------------------------------------"
