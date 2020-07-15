@@ -29,8 +29,6 @@ target_shell="${vs_code_snippets_dir}shellscript.json"
 target_cpp="${vs_code_snippets_dir}cpp.json"
 target_octave="${vs_code_snippets_dir}octave.json"
 
-
-
 # copying the latex file
 cp latex.json ${target_latex} 
 echo " Coppied ${target_latex}" 
@@ -46,6 +44,9 @@ echo " Coppied ${target_cpp}"
 # copying the shell script file
 cp octave.json ${target_octave} 
 echo " Coppied ${target_octave}" 
+
+# copying all vs code extensions to a config file
+cat extensions.list | xargs -L 1 code --install-extension
 
 echo "-------------------------------------------------------"
 echo " Setting up the vs code snippets"

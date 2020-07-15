@@ -48,6 +48,10 @@ cp ${target_octave} octave.json
 echo " Coppied ${target_octave}" 
 
 
+# fetch the current installed extension
+code --list-extensions > extensions.list
+
+
 echo "-------------------------------------------------------"
 echo " Copied vs code snippets to repo. "
 echo "-------------------------------------------------------"
