@@ -26,14 +26,26 @@ echo " Directory for the snippets is ${vs_code_snippets_dir}"
 
 target_latex="${vs_code_snippets_dir}latex.json"
 target_shell="${vs_code_snippets_dir}shellscript.json"
+target_cpp="${vs_code_snippets_dir}cpp.json"
+target_octave="${vs_code_snippets_dir}octave.json"
+
+
 
 # copying the latex file
 cp latex.json ${target_latex} 
-echo " Coppied ${target}" 
+echo " Coppied ${target_latex}" 
 
 # copying the shell script file
 cp shellscript.json ${target_shell} 
 echo " Coppied ${target_shell}" 
+
+# copying the shell script file
+cp cpp.json ${target_cpp} 
+echo " Coppied ${target_cpp}" 
+
+# copying the shell script file
+cp octave.json ${target_octave} 
+echo " Coppied ${target_octave}" 
 
 echo "-------------------------------------------------------"
 echo " Setting up the vs code snippets"
