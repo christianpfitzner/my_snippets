@@ -1,5 +1,6 @@
 ajshort.latex-preview
 christian-kohler.path-intellisense
+CoenraadS.bracket-pair-colorizer
 DavidAnson.vscode-markdownlint
 eamodio.gitlens
 esbenp.prettier-vscode
@@ -25,3 +26,4 @@ vscjava.vscode-java-pack
 vscjava.vscode-java-test
 vscjava.vscode-maven
 yamajyn.commandlist
+yzhang.markdown-all-in-one
