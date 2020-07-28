@@ -1,6 +1,8 @@
 ajshort.latex-preview
 christian-kohler.path-intellisense
 CoenraadS.bracket-pair-colorizer
+Dart-Code.dart-code
+Dart-Code.flutter
 DavidAnson.vscode-markdownlint
 eamodio.gitlens
 esbenp.prettier-vscode
@@ -13,6 +15,8 @@ ms-iot.vscode-ros
 ms-python.python
 ms-vscode.cpptools
 ms-vscode.vs-keybindings
+Nash.awesome-flutter-snippets
+nickfode.latex-formatter
 notskm.clang-tidy
 pijar.ros-snippets
 redhat.java

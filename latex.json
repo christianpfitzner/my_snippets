@@ -86,5 +86,19 @@
 		  "%*********************************************"
 		],
 		"description": "adding a single line and a comment"
+	  }, 
+	  "definition of newcommand": {
+		"prefix": "newcommand",
+		"body": [
+		  "\\newcommand{${1:name}}{${1:alias_name}}"
+		],
+		"description": ""
+	  }, 
+	  "definition of renewcommand": {
+		"prefix": "renewcommand",
+		"body": [
+		  "\\renewcommand{${1:cmd}}{${2:alias_cmd}}"
+		],
+		"description": "definition of renewcommand"
 	  }
 }
