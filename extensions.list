@@ -13,10 +13,12 @@ monokai.theme-monokai-pro-vscode
 ms-azuretools.vscode-docker
 ms-iot.vscode-ros
 ms-python.python
+ms-toolsai.jupyter
 ms-toolsai.vscode-ai
 ms-vscode-remote.remote-ssh
 ms-vscode-remote.remote-ssh-edit
 ms-vscode.azure-account
+ms-vscode.cmake-tools
 ms-vscode.cpptools
 ms-vscode.vs-keybindings
 Nash.awesome-flutter-snippets
@@ -25,6 +27,7 @@ notskm.clang-tidy
 pijar.ros-snippets
 redhat.java
 redhat.vscode-yaml
+RoboDK.Industrial-Robots
 rust-lang.rust
 Shan.code-settings-sync
 VisualStudioExptTeam.vscodeintellicode
